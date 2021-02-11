@@ -72,3 +72,4 @@ class SiswaController extends Controller
         return redirect('/siswa');
     }
 }
+// https://www.malasngoding.com/crud-laravel-menggunakan-eloquent/
