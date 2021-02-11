@@ -15,6 +15,7 @@
                     <thead>
                         <tr>
                             <th>Nama</th>
+                            <th>NIS</th>
                             <th>Alamat</th>
                             <th>OPSI</th>
                         </tr>
@@ -23,10 +24,11 @@
                         @foreach($siswa as $siswas)
                         <tr>
                             <td>{{ $siswas->Nama }}</td>
-                            <td>{{ $siswas->Alamat }}</td>
+                            <td>{{ $siswas->Nis}}</td>
+                            <td>{{ $siswas->Alamat}}</td>
                             <td>
-                                <a href="/pegawai/edit/{{ $p->id }}" class="btn btn-warning">Edit</a>
-                                <a href="/pegawai/hapus/{{ $p->id }}" class="btn btn-danger">Hapus</a>
+                                <a href="/siswa/edit/{{ $siswas->id }}" class="btn btn-warning">Edit</a>
+                                <a href="/siswa/hapus/{{ $siswas->id }}" class="btn btn-danger">Hapus</a>
                             </td>
                         </tr>
                         @endforeach

@@ -44,11 +44,38 @@
                         @endif
                 </div>
                 <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <input type="text" name="Jenis_Kelamin" class="form-control" placeholder="Jenis Kelamin Siswa ..">
+                        @if($errors->has('Jenis_Kelamin'))
+                            <div class="text-danger">
+                                {{ $errors->first('Jenis_Kelamin')}}
+                            </div>
+                        @endif
+                </div>
+                <div class="form-group">
+                    <label>Nama Orang Tua</label>
+                    <input type="text" name="Nama_OrangTua" class="form-control" placeholder="Nama OrangTua Siswa ..">
+                        @if($errors->has('Nama_OrangTua'))
+                            <div class="text-danger">
+                                {{ $errors->first('Nama_OrangTua')}}
+                            </div>
+                        @endif
+                </div>
+                <div class="form-group">
                     <label>Alamat</label>
                     <textarea name="Alamat" class="form-control" placeholder="Alamat pegawai .."></textarea>
                         @if($errors->has('Alamat'))
                             <div class="text-danger">
                                 {{ $errors->first('Alamat')}}
+                            </div>
+                        @endif
+                </div>
+                <div class="form-group">
+                    <label>Foto</label>
+                    <input type="text" name="Foto" class="form-control" placeholder="Foto Siswa ..">
+                        @if($errors->has('Foto'))
+                            <div class="text-danger">
+                                {{ $errors->first('Foto')}}
                             </div>
                         @endif
                 </div>
