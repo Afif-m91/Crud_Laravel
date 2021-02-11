@@ -8,7 +8,7 @@
                 Data Siswa 
              </div>
             <div class="card-body">
-                <a href="/pegawai/tambah" class="btn btn-primary">Input Siswa Baru</a>
+                <a href="/siswa/tambah" class="btn btn-primary">Input Siswa Baru</a>
                 <br/>
                 <br/>
                 <table class="table table-bordered table-hover table-striped">

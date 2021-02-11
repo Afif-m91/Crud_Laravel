@@ -20,4 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/siswa','SiswaController@index');
+Route::get('/siswa/tambah', 'SiswaController@tambah');
+Route::post('/siswa/store', 'SiswaController@store');
+Route::get('/siswa/edit/{id}', 'SiswaController@edit');

@@ -18,10 +18,10 @@ class CreateSiswaTable extends Migration
             $table->string('Nama');
             $table->integer('Nis');
             $table->text('Alamat');
-            $table->text('No_Telpon');
-            $table->text('Jenis_Kelamin');
-            $table->text('Nama_OrangTua');
-            $table->text('Foto');
+            $table->string('No_Telpon');
+            $table->string('Jenis_Kelamin');
+            $table->string('Nama_OrangTua');
+            $table->string('Foto');
             $table->timestamps();
         });
     }
