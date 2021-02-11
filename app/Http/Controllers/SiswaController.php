@@ -67,6 +67,7 @@ class SiswaController extends Controller
         $siswa->No_Telpon = $request->No_Telpon;
         $siswa->Nama_Orangtua = $request->Nama_OrangTua;
         $siswa->Foto =  $request->Foto;
+        $siswa->save();
         
         return redirect('/siswa');
     }
